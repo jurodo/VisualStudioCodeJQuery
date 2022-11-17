@@ -1,0 +1,230 @@
+* {
+    margin:0;         /*elimino valores por default*/
+    padding: 0;
+    list-style: none;
+    font-family: sans-serif;
+}
+/*==============================================*/
+#chat {
+    position: fixed;
+    width: 250px;
+    height: 60px;
+    bottom: 0;
+    right: 20px;
+    background: green;
+    border: 5px solid white;
+    z-index: 1;  /*trae adelante la caja chat*/
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 20px;
+    border-radius: 20px 20px 0 0;
+    cursor:pointer;
+}
+#chat a {
+   color:white;
+   font-family: 'Kaushan Script', cursive;
+   text-decoration: none;
+}
+/*==============================================*/
+header {
+   position: relative;   /*??*/
+   width: 1000px;
+   height: 120px;
+   margin: 20px auto;     
+   background: #000;
+}
+#logo {
+   position: absolute;
+   width: 200px;
+   height: 60px;
+   top:30px;
+   left:30px;
+   background: #ccc;
+   font-family: 'Kaushan Script', cursive; /*font referenciado por link href desde google/fonts*/
+   font-size: 50px;
+   text-align: center;
+   line-height: 60px;   /*alinea el texto verticalmente poner la altura del height usado*/
+}
+.redes {
+   position: absolute;
+   width: 42px;
+   height: 42px;
+   border-radius: 100%;  /*circulo*/
+   text-align: center;   /*centrar texto*/
+   line-height: 42px;    /*alinea el texto verticalmente poner la altura del height usado*/
+   color: white;       /*color de texto*/
+}
+#icono1 {
+   top:42px;
+   right: 120px;
+   background: blue;
+}
+#icono2 {
+   top:42px;
+   right: 70px;
+   background: green;
+}
+#icono3 {
+   top:42px;
+   right: 20px;
+   background: red;
+}
+/*==============================================*/
+nav {
+   position: relative;    /* margin: n       (top=n, rigth=n,  bottom=n, left=n)*/ 
+   width: 1000px;         /* margin: n m     (top=n, button=n, left=m,   rigth=m) predomina top y left*/
+   height: 48px;          /* margin: n auto  (top=n, button=n, centrado horizontal) predomina top*/
+   margin: auto;          /* margin: n m p q (top=n, rigth=m,  bottom=p, left=q)*/ 
+   background: #aaa;    /* margin: auto    (top=0, button=0  centrado horizontal)*/
+}
+.botones {
+   float:left;     /*coloca las cajas de forma horizontal de izquierda a derecha, no necesitas top left*/
+   width: 196px;
+   height: 48px;
+   margin: 0 2px;
+   background: rgba(100,0,255,1);
+   font-family: 'Kaushan Script', cursive; /*font referenciado por link href desde google/fonts*/
+   color: white;
+   text-align: center;
+   line-height: 48px;
+}
+a .botones:hover {
+   background: rgba(100,0,255,.4);
+}
+a .botones:active {
+   background: rgba(255,0,100,1);
+}
+/*==============================================*/
+#top{
+   position: relative;   /*??*/
+   margin: 20px auto;     
+   width: 1000px;
+   height: 192px;
+   background: #888;
+}
+#top ul {
+   /*float:left;*/         
+   width: 1100px;         /*artificio aumentar el width del ul para que entren las cajitas li*/
+   height: 192px;
+}
+#top ul li {
+   float:left;            /*coloca las cajas de forma horizontal de izquierda a derecha*/   
+   width: 326px;
+   height: 192px;
+   margin-right: 10px;
+   background: #aaa;
+   text-align: center;
+}
+#top ul li img{
+   border-radius: 100%;
+   height: 100px;
+}
+#top ul li h1{
+   font-family: 'Kaushan Script', cursive;
+}
+#top ul li p{
+   font-size: 14px;
+   margin: 10px;
+}
+/*==============================================*/
+section {
+   position: relative;    /* margin: n       (top=n, rigth=n,  bottom=n, left=n)*/ 
+   margin: auto;          /* margin: n m p q (top=n, rigth=m,  bottom=p, left=q)*/ 
+   width: 1000px;         /* margin: n m     (top=n, button=n, left=m,   rigth=m) predomina top y left*/
+   height: 500px;         /* margin: n auto  (top=n, button=n, centrado horizontal) predomina top*/
+   background: #aaa;    /* margin: auto    (top=0, button=0  centrado horizontal) predomina top*/
+}
+aside#izq {
+   position:absolute;
+   left: 0;
+   top: 0;
+   width: 200px;
+   height: 500px;
+   background: #666;
+}
+aside#izq ul li{
+   background: #aaa;
+   padding: 10px;
+   margin: 2px 10px;
+   list-style: square;            /*coloca cuadraditos a cada item de la lista*/
+   list-style-position: inside;   /*los cuadraditos anteriores dentro de la caja li*/ 
+   /*list-style-image: url(upc-white.png);*/  /*coloca una imagen en lugar de los cuadraditos anteriores*/
+}
+aside#izq ul li a {
+   text-decoration: none;     /*quita el subrayado al ancor*/
+}
+article {
+   position: absolute;
+   left: 200px;
+   top: 0;
+   width: 600px;
+   height: 500px;
+   background: #888;
+}
+article h1{
+   font-family: 'Kaushan Script', cursive;
+   font-size: 48px;
+   margin: 20px;
+}
+article p img{
+   float: left; /*coloca la imagen al lado izquierdo del texto*/
+   margin-right: 20px;
+}
+article p {
+   font-size: 14px;
+   text-align: justify;
+   margin: 5px 20px;
+}
+aside#der {
+   position:absolute;
+   right: 0;
+   top: 0;
+   width: 200px;
+   height: 500px;
+   background: #666;
+}
+aside#der h1 {
+   width: 200px;
+   height: 50px;
+   line-height: 50px;
+   text-align: center;
+   background: rgba(100,0,255,1);
+   color: white;
+   margin-bottom: 5px;
+}
+aside#der input {
+   padding: 10px;
+   margin: 5px 0;
+   width: 176px;
+}
+aside#der input[type="text"] {
+   background: white url(user.png);  /*es un icono dentro del input text*/
+   background-repeat: no-repeat;       /*si no se coloca no-repeat, la imagen se repitira entro del input*/
+   background-position: right;        /*el icono se alinea a la derecha dentro del input text*/
+   background-size: contain;          /*se encaje verticalmente*/
+}
+aside#der input[type="password"] {
+   background: white url(lock.png);
+   background-repeat: no-repeat;
+   background-position: right;
+   background-size: contain;
+}
+aside#der input[type="submit"] {
+   width: 200px;
+   background: rgba(100,0,255,1);
+   border: 0;
+   cursor: pointer;
+}
+/*==============================================*/
+footer {
+   position: relative;   /*??*/
+   margin: 20px auto;     
+   width: 1000px;
+   height: 70px;
+   text-align: center;
+   line-height: 70px;   /*alinea el texto verticalmente poner la altura del height usado*/
+   color: white;
+   background: rgba(100,0,255,1);
+}

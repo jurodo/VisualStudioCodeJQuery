@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+<h2>The search() Method</h2>
+
+<p>search() searches a string for a value and returns the position of the first match:</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "xxxJuancaf20"
+let cadena = "Juanca"
+text   = text.toUpperCase()
+cadena = cadena.toUpperCase()
+let position = text.search(cadena);
+
+document.getElementById("demo").innerHTML = position;
+</script>
+
+</body>
+</html>

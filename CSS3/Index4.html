@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <style>
+        * {
+             margin:0;         /*elimino valores por default*/
+             padding: 0;
+             list-style: none;
+             font-family: sans-serif;
+         }
+         body
+         {
+             background: black url(img01.jpg);
+             background-repeat: no-repeat;
+             background-size: cover;  /*120% da mas resolución que cover*/
+         }
+         aside#izq h1 
+         {
+             padding: 20px;
+             font-size: 50px;
+             text-align: center;
+             color: white;
+         }
+         aside#der h1 
+         {
+             padding: 20px;
+             font-size: 50px;
+             text-align: center;
+             color: white;
+         }
+
+         @media (min-width: 800px) 
+         {
+         body 
+         {
+            background: black none;
+         }    
+         section 
+         {
+             position: relative;
+             width: 80%;               /*hace responsive el ancho*/
+             height: 400px;
+             margin: 100px auto;
+             background: white;
+         }
+         aside#izq {
+             float: left;
+             width: 50%;               /*hace responsive el ancho, 50% del ancho disponible*/
+             height: 400px;
+             background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(img02.jpg);
+             background-repeat: no-repeat;
+             background-size: cover;
+         }
+         aside#izq h1 {
+             padding: 20px;
+             text-align: center;
+             color: black;
+             font-size: 50px;
+         }
+         aside#der {
+             float: left;
+             width: 50%;      /*hace responsive el ancho, 50% del ancho disponible*/
+             height: 400px;
+             background:#EBF3FF;
+         }
+         aside#der h1 {
+             padding: 20px;
+             text-align: center;
+             color: black;
+             font-size: 50px;
+         }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <aside id="izq">
+             <h1>Lado izquierdo</h1>
+        </aside>
+        <aside id="der">
+             <h1>Lado derecho</h1>
+        </aside>
+    </section>
+</body>
+</html>

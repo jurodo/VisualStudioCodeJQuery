@@ -1,0 +1,7 @@
+auto rename tag   (cambia el inicio y fin de la etiqueta)
+beautify     (ordena el codigo) ctrl+shift+p ingresa: beautify file     
+bracket pair colorizer  (muestra colores en los agrupadores de codigo)
+html tag wrapper
+live server
+open in browser
+vscode icons
